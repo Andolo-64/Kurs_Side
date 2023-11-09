@@ -5,7 +5,7 @@ var traker =0;
 function genBtn()
 {
     console.log("buten")
-for (var test = 1; test >= traker;)
+for (var test = 5; test >= traker;)
 {
     console.log("lopp")
     traker++;
@@ -14,7 +14,6 @@ for (var test = 1; test >= traker;)
     document.getElementById('butenResultat').appendChild(ebox);
     console.log("lagd")
 }
-
 }
 
 

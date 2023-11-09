@@ -13,9 +13,9 @@
 <div class = "container">
     
 <h1>Client<h1>
-
     <button id="generateBtn" onclick="genBtn()"> button </button>
    <p id = "butenResultat"> <p>
+
     <?php
 include("ClientCode.php");
 ?>                            
