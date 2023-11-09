@@ -1,0 +1,20 @@
+body
+{
+    background-image: url(SkyBox1.png);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+.container
+{
+background-color: rgb(212, 173, 197);
+
+align-content: center;
+width: 50%;
+text-align:center;
+margin: auto;
+
+    color: rgb(41, 27, 27);
+}
