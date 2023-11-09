@@ -6,10 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
 </head>
-
 
 <body>
     <link rel="stylesheet" href="Client.css">
@@ -18,7 +15,7 @@
 <h1>Client<h1>
 
     <button id="generateBtn" onclick="genBtn()"> button </button>
-   
+   <p id = "butenResultat"> <p>
     <?php
 include("ClientCode.php");
 ?>                            

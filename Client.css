@@ -1,7 +1,7 @@
 body
 {
     background-image: url(SkyBox1.png);
-    background-repeat: no-repeat; 
+   /* background-repeat: no-repeat; */
     background-attachment: fixed;
     background-size: cover;
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
