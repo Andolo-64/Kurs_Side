@@ -4,6 +4,16 @@ var traker =0;
 
 function genBtn()
 {
+    $.ajax({
+        type: "POST",
+        url: 'ClientCode.php',
+        data:{action:'call_this'},
+        success:function(html) {
+          alert(html);
+        }
+
+   });
+
     console.log("buten")
 for (var test = 5; test >= traker;)
 {

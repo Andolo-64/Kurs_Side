@@ -15,10 +15,11 @@
 <h1>Client<h1>
     <button id="generateBtn" onclick="genBtn()"> button </button>
    <p id = "butenResultat"> <p>
+   <input type="submit" name="submit">
 
     <?php
 include("ClientCode.php");
-?>                            
+?>
 </div>
 <script src="Client.js" ></script>
 </body>

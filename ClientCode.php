@@ -5,10 +5,11 @@
     $Gamer = "Gaming";
     echo $Gamer;
     echo"Hello";
-    function genBtn()
-    { 
-      
-        echo "This is Button1 that is selected"; 
-    } 
+    if(isset($_POST["submit"])) { echo"Submit"; }
+
+    if($_POST['action'] == 'call_this') {
+        echo"Post";
+}
+
    
      
