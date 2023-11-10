@@ -4,16 +4,7 @@ var traker =0;
 
 function genBtn()
 {
-    $.ajax({
-        type: "POST",
-        url: 'ClientCode.php',
-        data:{action:'call_this'},
-        success:function(html) {
-          alert(html);
-        }
-
-   });
-
+  
     console.log("buten")
 for (var test = 5; test >= traker;)
 {
@@ -26,4 +17,21 @@ for (var test = 5; test >= traker;)
 }
 }
 
+function ServerBtn()
+{
+    var xhr = new XMLHttpRequest();
+    xhr.open('Sent', 'ClientCode.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    
+    // You can include data in the send method if needed
+    xhr.send();
 
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // Handle the response from the PHP function
+            console.log(xhr.responseText);
+        }
+    };
+   
+
+}

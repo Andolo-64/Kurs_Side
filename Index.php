@@ -15,7 +15,11 @@
 <h1>Client<h1>
     <button id="generateBtn" onclick="genBtn()"> button </button>
    <p id = "butenResultat"> <p>
-   <input type="submit" name="submit">
+   <button id="SBtn" onclick="ServerBtn()"> PHP </button>
+<form method="post">
+    <!--php Buten -->
+    <input type="submit" name="PHPBtn" value="GamingPHP">
+</form>
 
     <?php
 include("ClientCode.php");
