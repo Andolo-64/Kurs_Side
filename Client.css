@@ -13,6 +13,14 @@ body
     -ms-interpolation-mode: nearest-neighbor; 
     
 }
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 170px;
+    grid-template-columns: auto auto;
+}
+
 .container
 {
 
@@ -46,5 +54,5 @@ button {
     text-align: left;
     background-image: linear-gradient( rgb(231, 250, 239) , rgb(226, 247, 255));
     border-radius: 30px;
-    width: 40%;
+    width: 70%;
 }

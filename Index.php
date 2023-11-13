@@ -17,11 +17,11 @@
 
 <h1>Client<h1>
     
-
-<div id = textBox1>
-<h2>Kva skal du lere om<h2>
-<h4>Client Sine Oppgaver<h4>
-<h4>Client Server Modelen<h4>  
+<div class = "grid-container">
+    <div id = textBox1>
+    <h2>Kva skal du lere om<h2>
+    <h4>Client Sine Oppgaver<h4>
+    <h4>Client Server Modelen<h4>  
 
 </div>
 
@@ -34,7 +34,7 @@
 <h2>Client Server Modelen<h2>
 <h4>Client<h4>
 </div>
-
+</div>
 
    <!-- 
     <button id="generateBtn" onclick="genBtn()"> button </button>
