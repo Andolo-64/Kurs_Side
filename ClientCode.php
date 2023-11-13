@@ -2,9 +2,10 @@
 //©A,O Høgestøl 2023
  
     $Trac = 0;
-    $Gamer = "Gaming";
-    echo $Gamer;
-    echo"Hello";
+   
+    
+    $imageClientGif = 'ClientImg.gif';
+    $BildeText1 = "Client";
 
     if($_SERVER['REQUEST_METHOD'] === 'Sent')
     {

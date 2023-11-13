@@ -56,3 +56,9 @@ button {
     border-radius: 30px;
     width: 70%;
 }
+#GifImg{
+    padding: 9px 100px;
+    transform: scale(2);
+    
+   
+}
