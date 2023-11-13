@@ -21,8 +21,9 @@ align-content: center;
 width: 50%;
 text-align:center;
 margin: auto;
-background-color: rgb(212, 173, 197);
+background-image: linear-gradient( rgb(255, 245, 254) , rgb(253, 230, 230));
     color: rgb(41, 27, 27);
+    
 }
 
 button {
@@ -39,4 +40,11 @@ button {
    
    width: 200px;
    height: 50px;  
+}
+
+#textBox1{
+    text-align: left;
+    background-image: linear-gradient( rgb(231, 250, 239) , rgb(226, 247, 255));
+    border-radius: 30px;
+    width: 40%;
 }

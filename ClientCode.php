@@ -1,7 +1,7 @@
 <?php 
 //©A,O Høgestøl 2023
  
-      $Trac = 0;
+    $Trac = 0;
     $Gamer = "Gaming";
     echo $Gamer;
     echo"Hello";
@@ -13,7 +13,6 @@
 
     if($_SERVER['REQUEST_METHOD'] === 'POST')
      {
-        
         switch($Trac){
             case 0:
             echo"PHP";
@@ -29,11 +28,7 @@
              $Trac= 0;
              break;
         }
-         
-
     }
-
-    
 
     if (isset($_GET['functionToCall']) && function_exists($_GET['functionToCall'])) {
         call_user_func($_GET['functionToCall']);
