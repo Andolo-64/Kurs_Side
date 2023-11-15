@@ -42,6 +42,19 @@ include("ClientCode.php");
         </div>
 
     </div>
+
+        <div class = "grid-container">
+            
+            <div id = textBox1>
+                <h2>Film<h2>
+                <h4>Client<h4> 
+                <video width="320" height="240" controls>  
+                    <source src="Client_Kurs.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+        </div>
 </div>
 
    <!-- 
