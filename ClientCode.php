@@ -7,6 +7,22 @@
     $imageClientGif = 'ClientImg.gif';
     $BildeText1 = "Client";
 
+    $Oppg1 = $_POST["Oppg1"] ?? "";
+    $Oppg2 = $_POST["Oppg2"] ?? "";
+    $Oppg3 = $_POST["Oppg3"] ?? "";
+    $Oppg4 = $_POST["Oppg4"] ?? "";
+    $KorMangeRett = 0;
+
+    
+
+
+    function RettSver()
+    {
+        global $KorMangeRett;
+        $KorMangeRett += 1;
+        echo "Du svarte rett";
+    }
+
     if($_SERVER['REQUEST_METHOD'] === 'Sent')
     {
         print"OK";
@@ -14,6 +30,7 @@
 
     if($_SERVER['REQUEST_METHOD'] === 'POST')
      {
+        global $Trac;
         switch($Trac){
             case 0:
             echo"PHP";
