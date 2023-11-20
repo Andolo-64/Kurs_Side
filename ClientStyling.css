@@ -1,6 +1,6 @@
 body
 {
-    background-image: url(SkyBox1.png);
+    background-image: url(KursBakrund2.png);
    /* background-repeat: no-repeat; */
     background-attachment: fixed;
     background-size: cover;
@@ -18,19 +18,18 @@ body
     display: grid;
     column-gap: 50px;
     row-gap: 170px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;  
 }
 
 .container
 {
 
-
 align-content: center;
-width: 50%;
+width: 55%;
 text-align:center;
 margin: auto;
 background-image: linear-gradient( rgb(255, 245, 254) , rgb(253, 230, 230));
-    color: rgb(41, 27, 27);
+color: rgb(41, 27, 27);
     
 }
 
@@ -71,12 +70,14 @@ input[type=submit]{
     background-image: linear-gradient( rgb(231, 250, 239) , rgb(226, 247, 255));
     border-radius: 30px;
     width: 70%;
+    margin: auto;
+    text-align: left;
+    padding: 0px 10px;
 }
 #GifImg{
     padding: 9px 100px;
     transform: scale(2);
     
-   
-}
+ }
 
 
