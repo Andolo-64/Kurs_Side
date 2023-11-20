@@ -50,9 +50,9 @@ button {
    height: 50px;  
 }
 
-#submit { 
+input[type=submit]{ 
 
-    background-image: linear-gradient( rgb(36, 21, 104) , rgb(4, 28, 37));
+    background-image: linear-gradient(rgb(36, 21, 104), rgb(4, 28, 37));
     color: white;
     padding: 10px 20px;
     border: none;
@@ -61,10 +61,9 @@ button {
     margin: 10px;
     border-radius: 30px;
     background-position: left top;
-    background-repeat: repeat;
-    
+    background-repeat: no-repeat;
     width: 200px;
-    height: 50px; 
+    height: 50px;
 }
 
 #textBox1{
@@ -79,3 +78,5 @@ button {
     
    
 }
+
+

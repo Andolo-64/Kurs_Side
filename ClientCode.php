@@ -1,60 +1,52 @@
 <?php 
 //©A,O Høgestøl 2023
- 
-    $Trac = 0;
-   
-    
+          
     $imageClientGif = 'ClientImg.gif';
     $BildeText1 = "Client";
+    $prosentRett = 0;
 
     $Oppg1 = $_POST["Oppg1"] ?? "";
     $Oppg2 = $_POST["Oppg2"] ?? "";
     $Oppg3 = $_POST["Oppg3"] ?? "";
     $Oppg4 = $_POST["Oppg4"] ?? "";
     $KorMangeRett = 0;
-
-    
-
-
-    function RettSver()
+      function RettSvar()
     {
         global $KorMangeRett;
         $KorMangeRett += 1;
-        echo "Du svarte rett";
     }
 
-    if($_SERVER['REQUEST_METHOD'] === 'Sent')
+    function Svart()
     {
-        print"OK";
-    }
-
-    if($_SERVER['REQUEST_METHOD'] === 'POST')
-     {
-        global $Trac;
-        switch($Trac){
-            case 0:
-            echo"PHP";
-            $Trac++;
-            break;
-            case 1:
-            echo"Anime";
-            echo "Today is " . date("d/m/y") . "<br>";
-            $Trac++;
-            break;
-            case 3:
-            echo"Gaming"; 
-             $Trac= 0;
-             break;
-        }
-    }
-
-    if (isset($_GET['functionToCall']) && function_exists($_GET['functionToCall'])) {
-        call_user_func($_GET['functionToCall']);
-      }
+        tilbakemelding();
+        global $prosentRett;
+        global $KorMangeRett;
+        $prosentRett = $KorMangeRett * 100 / 5;
+        echo "$prosentRett"."% ";
+        echo "$KorMangeRett"."/"."5";
       
-      function yourFunction()
-      {
-        echo"Hello";
-      }
-
+    } 
+function tilbakemelding()
+{
+    global $KorMangeRett;
+    switch($KorMangeRett)
+    {
+       case 0:
+           echo "du har ikkje nok rett ";
+           break;
+       case 1:
+           echo "du har ikkje nok rett ";
+           break;
+       case 2:
+           echo "du har ikkje nok rett ";
+           break;
+       case 3:
+           echo "du har nok rett ";
+           break;
+       case 4:
+           echo "Du fekk alle rett ☺ ";
+           break;
+    }
+}
+    
      

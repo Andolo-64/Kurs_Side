@@ -58,49 +58,51 @@ include("ClientCode.php");
        
         </div>
            
-                <div id = textBox1>
+    
+    <form action="index.php" method="POST">
+            <div id = textBox1>
                 <h2>Oppgåve 1<h2>
-                <form action="index.php" method="post">
-                    <input type="Text" name="Oppg1">
-                    
-                    
-                   
-                
+                <input type="Text" name="Oppg1">
             </div>
             <div id = textBox1>
                 <h2>Oppgåve 2<h2>
-                <input type="Text" name="Oppg2">
+                <input type="radio" name="Oppg2" value="Ja" checked> Ja
+                <input type="radio" name="Oppg2" value="Nei"> Nei
             </div>
             <div id = textBox1>
-                <h2>Oppgåve 3<h2>
-                <input type="Text" name="Oppg3">
+                    <h2>Oppgåve 3<h2>
+                    <input type="Text" name="Oppg3">
             </div>
             <div id = textBox1>
                 <h2>Oppgåve 4<h2>
                 <input type="Text" name="Oppg4">
             </div>
-            <input type="submit">
-            <div id = #submit >
-            <?php if($Oppg1 == "ja") {RettSver();}
-             if ($KorMangeRett > 0) {echo $KorMangeRett;}
+            <div id = textBox1>
+                <h2>Oppgåve 5<h2>
+                <input type="Text" name="Oppg5">
+            </div>
+            <div >
+                <input type="submit" name="PHPBtn" >
+            </div>
+            <?php 
+
+             if($Oppg1 == "ja") {RettSvar();}
              
+             if($Oppg2 == "Nei") {RettSvar();}
+
+             if($Oppg3 == "Nei") {RettSvar();}
+
+             if($Oppg4 == "Nei") {RettSvar();}  
+
+             if($_SERVER['REQUEST_METHOD'] === "POST")
+             {
+                Svart();
+             }
             ?>
             </div>
-            </form>
+    </form>
 </div>
- <!--  
-   
-    <button id="generateBtn" onclick="genBtn()"> button </button>
-   <p id = "butenResultat"> <p>
-   <button id="SBtn" onclick="ServerBtn()"> PHP </button>
-<form method="post">
-  --php Buten-- 
-    <input type="submit" name="PHPBtn" value="GamingPHP">
-</form>
--->
  
-
-
 </div>
 <script src="Client.js" ></script>
 </body>
