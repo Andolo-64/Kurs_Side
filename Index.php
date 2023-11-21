@@ -36,13 +36,13 @@ include("ClientCode.php");
 
         <div id = textBox1>
             <h2>Client Server Modelen<h2>
-            <h4>Client<h4>   
+            <h4>Client Server Modelen er den valigaste måten pcer kominiserer<h4>   
         </div>
 
         <div id = textBox1>
             
             <h2> <?php echo "$BildeText1";?><h2>
-            <h4>ein <h4>
+            <h4>ein Client kominiserer med og sende pacets til ein server. det er to pacets som er vanlig tcp og udp<h4>
             <p id = GifImg >  <?php echo '<img src="' . $imageClientGif . '" alt="ClientGif">';?> <p>
         </div>
 
