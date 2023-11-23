@@ -2,7 +2,7 @@
 //©A,O Høgestøl 2023
           
     $imageClientGif = 'ClientImg.gif';
-    $BildeText1 = "Vordan ein Client kominiserer";
+    $BildeText1 = "Hvordan ein Client kommuniserer";
     $prosentRett = 0;
 
     $Oppg1 = $_POST["Oppg1"] ?? "";
@@ -34,14 +34,13 @@ function tilbakemelding()
     global $KorMangeRett;
     switch($KorMangeRett)
     {
-       
         case 4:
-            echo "du har nok rett ";
+            echo "du har nok rett, kurset er bestått ";
             break;
-       case 5:
-           echo "Du fekk alle rett ☺ ";
+        case 5:
+           echo "Du fekk alle rett ☺ , kurset er bestått ";
            break;
-           default:  echo "du har ikkje nok rett ";
+        default:  echo "Du har ikke nok rett, vennligst prøv igjen ";
 
     }
 }

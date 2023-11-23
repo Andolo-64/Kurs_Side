@@ -20,33 +20,32 @@ include("ClientCode.php");
     <h1>Client<h1>
     
     <div id = textBox1>
-            <h2>Kva skal du lere om<h2>
-            <h4>Client Sine Oppgaver<h4>
-            <h4>Client Server Modelen<h4>  
-            <h4>Vordan ein Client kominiserer<h4>
+            <h2>Hva skal du lære om<h2>
+            <h4>Client sine oppgaver<h4>
+            <h4>Client server modellen<h4>  
+            <h4>Hvordan en client kommuniserer<h4>
         </div>
 
     <div class = "grid-container">
        
         <div id = textBox1>
-            <h2>Client Sine Oppgaver<h2>
+            <h2>Client sine oppgaver<h2>
             <h4>
-                Client sine oppgaver er og kominisere end ein server.                 
-                Clienten har oppgaven og spøre om services og resurser.
+                Client sine oppgaver er og kommunisere med en server.                 
+                Clienten har som oppgave og spørre om services og resurser.
                 
-
             <h4>
         </div>
 
         <div id = textBox1>
-            <h2>Client Server Modelen<h2>
-            <h4>Client Server Modelen er den valigaste måten pcer kominiserer og foker med at du har ein client og ein server med distinkte oppgaver<h4>   
+            <h2>Client server modellen<h2>
+            <h4>Client server modellen er den vanligeste måten pcer kommuniserer på. Det fungerer slik at du har en client og en server med distinkte oppgaver<h4>   
         </div>
 
         <div id = textBox1>
             
             <h2> <?php echo "$BildeText1";?><h2>
-            <h4>ein Client kominiserer med og sende pacets til ein server. det er to pacets som er vanlig tcp og udp<h4>
+            <h4>En Client kommuniserer ved å sende pacets til en server. Det er to pacet Protocoler som er vanlig og bruke, tcp og udp<h4>
               <?php echo '<img id = GifImg src="' . $imageClientGif . '" alt="ClientGif">';?> 
         </div>
 
@@ -60,38 +59,39 @@ include("ClientCode.php");
      </div>
 
         <div id = textBox1>
-                <h2>Oppgåver<h2>
-                    <h3>Nor du har svart på alle oppgavene må du tryke send og bla ned til bunen for og se resultate du må få minst 80% for og bestå<h3>
+                <h2>Oppgaver<h2>
+                    <h3>Når du har svart på alle oppgavene må du tryke send og bla ned til bunnen for og se resultate. Du må få minst 80% for og bestå.<h3>
         </div>
 
     <form action="index.php" method="POST">
             <div id = textBox1>
-                <h2>Oppgåve 1<h2>
-                <h4>Kan ein klient snaka med ein klient<h4>
+                <h2>Oppgave 1<h2>
+                <h4>Kan en klient snakke med en klient<h4>
                 <input type="radio" name="Oppg1" value="1" > JA
                 <input type="radio" name="Oppg1" value="2"> Nei
             </div>
             <div id = textBox1>
-                <h3>Oppgåve 2<h3>
-                <h4>kva er navna til packetene clienten kan sende<h4>   
+                <h3>Oppgave 2<h3>
+                <h4>hva er navna til di vanligaste packetene clienten kan sende<h4>   
                 <input type="radio" name="Oppg2" value="1" > tcg php
                 <input type="radio" name="Oppg2" value="2"> ini nat 
                 <input type="radio" name="Oppg2" value="3"> tcp udp
             </div>
             <div id = textBox1>
-                <h2>Oppgåve 3<h2>
-                <h4>Kva Skjer vis paceten ikkje komer fram til serveren<h4>  
-                <input type="radio" name="Oppg3" value="1" > ???
-                <input type="radio" name="Oppg3" value="2"> ???
+                <h2>Oppgave 3<h2>
+                <h4>hva heter det når du har en client og en server med distinkte oppgaver<h4>  
+                <h4> <input type="radio" name="Oppg3" value="1" > nettverk pacet modellen<h4>
+                <h4> <input type="radio" name="Oppg3" value="2"> Client Server modellen<h4>
+                <h4> <input type="radio" name="Oppg3" value="3"> udp tcp modellen<h4>
             </div>
             <div id = textBox1>
-                <h2>Oppgåve 4<h2>
-                <h4>kva pacet bruke ein netside<h4>
+                <h2>Oppgave 4<h2>
+                <h4>Hvilken pacet Protocol bruker en nettside<h4>
                 <input type="Text" name="Oppg4">
             </div>
             <div id = textBox1>
-                <h2>Oppgåve 5<h2>
-                <h4>kva pacet bruker valorant<h4>
+                <h2>Oppgave 5<h2>
+                <h4>Hvilken pacet Protocol bruker valorant<h4>
                 <input type="Text" name="Oppg5">
             </div>
             <div >
@@ -103,7 +103,7 @@ include("ClientCode.php");
              
              if($Oppg2 == "3") {RettSvar();}
 
-             if($Oppg3 == "1") {RettSvar();}
+             if($Oppg3 == "2") {RettSvar();}
 
              if($Oppg4 == "tcp") {RettSvar();}  
 
