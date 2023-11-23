@@ -119,7 +119,6 @@ include("ClientCode.php");
 </div>
  
 </div>
-<script src="Client.js" ></script>
 </body>
 </html>
 
