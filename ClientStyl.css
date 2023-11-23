@@ -77,7 +77,12 @@ input[type=submit]{
 #GifImg{
     padding: 9px 100px;
     transform: scale(2);
+    align-content: center;
     
+ }
+ #video{
+    width: 500px;
+    height: 500px;
  }
 
 

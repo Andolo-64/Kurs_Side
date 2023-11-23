@@ -11,6 +11,7 @@
     $Oppg4 = $_POST["Oppg4"] ?? "";
     $Oppg5 = $_POST["Oppg5"] ?? "";
     $KorMangeRett = 0;
+    $KorMangeFines = 5;
       function RettSvar()
     {
         global $KorMangeRett;
@@ -22,9 +23,10 @@
         tilbakemelding();
         global $prosentRett;
         global $KorMangeRett;
-        $prosentRett = $KorMangeRett * 100 / 5;
+        global $KorMangeFines;
+        $prosentRett = $KorMangeRett * 100 / $KorMangeFines;
         echo "$prosentRett"."% ";
-        echo "$KorMangeRett"."/"."5";
+        echo "$KorMangeRett"."/"."$KorMangeFines";
       
     } 
 function tilbakemelding()
@@ -32,24 +34,15 @@ function tilbakemelding()
     global $KorMangeRett;
     switch($KorMangeRett)
     {
-       case 0:
-           echo "du har ikkje nok rett ";
-           break;
-       case 1:
-           echo "du har ikkje nok rett ";
-           break;
-       case 2:
-           echo "du har ikkje nok rett ";
-           break;
-       case 3:
-           echo "du har ikkje nok rett ";
-           break;
+       
         case 4:
             echo "du har nok rett ";
             break;
        case 5:
            echo "Du fekk alle rett ☺ ";
            break;
+           default:  echo "du har ikkje nok rett ";
+
     }
 }
     

@@ -14,7 +14,7 @@ include("ClientCode.php");
 </head>
 
 <body>
-    <link rel="stylesheet" href="ClientStyling.css">
+    <link rel="stylesheet" href="ClientStyl.css">
 <div class = "container">
 
     <h1>Client<h1>
@@ -28,29 +28,33 @@ include("ClientCode.php");
 
     <div class = "grid-container">
        
-
         <div id = textBox1>
             <h2>Client Sine Oppgaver<h2>
-            <h4>Client sine oppgaver er og kominisere end ein server<h4>
+            <h4>
+                Client sine oppgaver er og kominisere end ein server.                 
+                Clienten har oppgaven og spøre om services og resurser.
+                
+
+            <h4>
         </div>
 
         <div id = textBox1>
             <h2>Client Server Modelen<h2>
-            <h4>Client Server Modelen er den valigaste måten pcer kominiserer<h4>   
+            <h4>Client Server Modelen er den valigaste måten pcer kominiserer og foker med at du har ein client og ein server med distinkte oppgaver<h4>   
         </div>
 
         <div id = textBox1>
             
             <h2> <?php echo "$BildeText1";?><h2>
             <h4>ein Client kominiserer med og sende pacets til ein server. det er to pacets som er vanlig tcp og udp<h4>
-            <p id = GifImg >  <?php echo '<img src="' . $imageClientGif . '" alt="ClientGif">';?> <p>
+              <?php echo '<img id = GifImg src="' . $imageClientGif . '" alt="ClientGif">';?> 
         </div>
 
     </div>
 
     <div id = textBox1>
         <h2>Film<h2> 
-        <video width="640" height="480" controls>  
+        <video id = "video" width="640" height="480" controls>  
             <source src="Client_Kurs.mp4" type="video/mp4">
         </video>
      </div>
@@ -82,10 +86,12 @@ include("ClientCode.php");
             </div>
             <div id = textBox1>
                 <h2>Oppgåve 4<h2>
+                <h4>kva pacet bruke ein netside<h4>
                 <input type="Text" name="Oppg4">
             </div>
             <div id = textBox1>
                 <h2>Oppgåve 5<h2>
+                <h4>kva pacet bruker valorant<h4>
                 <input type="Text" name="Oppg5">
             </div>
             <div >
@@ -93,15 +99,15 @@ include("ClientCode.php");
             </div>
             <?php 
 
-             if($Oppg1 == "1") {RettSvar();}
+             if($Oppg1 == "2") {RettSvar();}
              
              if($Oppg2 == "3") {RettSvar();}
 
              if($Oppg3 == "1") {RettSvar();}
 
-             if($Oppg4 == "Nei") {RettSvar();}  
+             if($Oppg4 == "tcp") {RettSvar();}  
 
-             if($Oppg5 == "Nei") {RettSvar();}
+             if($Oppg5 == "udp") {RettSvar();}
 
              if($_SERVER['REQUEST_METHOD'] === "POST")
              {
