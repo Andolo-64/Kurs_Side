@@ -33,22 +33,6 @@ color: rgb(41, 27, 27);
     
 }
 
-button {
-    background-image: linear-gradient( rgb(36, 21, 104) , rgb(4, 28, 37));
-   color: white;
-   padding: 10px 20px;
-   border: none;
-   cursor: pointer;
-   font-size: 16px;
-   margin: 10px;
-   border-radius: 30px;
-   background-position: left top;
-   background-repeat: repeat;
-   
-   width: 200px;
-   height: 50px;  
-}
-
 input[type=submit]{ 
 
     background-image: linear-gradient(rgb(36, 21, 104), rgb(4, 28, 37));

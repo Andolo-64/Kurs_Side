@@ -14,7 +14,7 @@ include("ClientCode.php");
 </head>
 
 <body>
-    <link rel="stylesheet" href="ClientStyling.css">
+    <link rel="stylesheet" href="ClientStyle.css">
 <div class = "container">
 
     <h1>Client<h1>
@@ -33,7 +33,6 @@ include("ClientCode.php");
             <h4>
                 Client sine oppgaver er og kommunisere med en server.                 
                 Clienten har som oppgave og spørre om services og resurser.
-                
             <h4>
         </div>
 
@@ -57,8 +56,14 @@ include("ClientCode.php");
     <div id = textBox1>
         <h2>Film<h2> 
        
-        <iframe id = "video" width="560" height="315" src="https://www.youtube.com/embed/jhJjUgu8W2Q?si=mRBk46hNpk7AIiYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-       
+        <iframe 
+        id = "video" width="560" height="315"
+         src="https://www.youtube.com/embed/jhJjUgu8W2Q?si=mRBk46hNpk7AIiYQ" 
+         title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         allowfullscreen>
+        </iframe>
      </div>
 
         <div id = textBox1>
@@ -78,9 +83,9 @@ include("ClientCode.php");
             </div>
             <div id = textBox1>
                 <h3>Oppgave 2<h3>
-                <h4>hva er navna til di vanligaste packetene clienten kan sende<h4>   
+                <h4>hva er navna til di vanligaste packet Protocolene clienten kan sende<h4>   
                 <input type="radio" name="Oppg2" value="1" > tcg php
-                <input type="radio" name="Oppg2" value="2"> ini nat 
+                <input type="radio" name="Oppg2" value="2"> ini nat
                 <input type="radio" name="Oppg2" value="3"> tcp udp
             </div>
             <div id = textBox1>
@@ -123,7 +128,6 @@ include("ClientCode.php");
             </div>
     </form>
 </div>
- 
 </div>
 </body>
 </html>
