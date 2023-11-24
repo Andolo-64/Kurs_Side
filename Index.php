@@ -14,7 +14,7 @@ include("ClientCode.php");
 </head>
 
 <body>
-    <link rel="stylesheet" href="ClientStyl.css">
+    <link rel="stylesheet" href="ClientStyling.css">
 <div class = "container">
 
     <h1>Client<h1>
@@ -39,7 +39,10 @@ include("ClientCode.php");
 
         <div id = textBox1>
             <h2>Client server modellen<h2>
-            <h4>Client server modellen er den vanligeste måten pcer kommuniserer på. Det fungerer slik at du har en client og en server med distinkte oppgaver<h4>   
+            <h4>
+                Client server modellen er den vanligeste måten pcer kommuniserer på. 
+                Det fungerer slik at du har en client og en server med distinkte oppgaver
+            <h4>   
         </div>
 
         <div id = textBox1>
@@ -53,14 +56,17 @@ include("ClientCode.php");
 
     <div id = textBox1>
         <h2>Film<h2> 
-        <video id = "video" width="640" height="480" controls>  
-            <source src="Client_Kurs.mp4" type="video/mp4">
-        </video>
+       
+        <iframe id = "video" width="560" height="315" src="https://www.youtube.com/embed/jhJjUgu8W2Q?si=mRBk46hNpk7AIiYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       
      </div>
 
         <div id = textBox1>
                 <h2>Oppgaver<h2>
-                    <h3>Når du har svart på alle oppgavene må du tryke send og bla ned til bunnen for og se resultate. Du må få minst 80% for og bestå.<h3>
+                <h3>
+                    Når du har svart på alle oppgavene må du tryke send og bla ned til bunnen for og se resultate.
+                    Du må få minst 80% for og bestå.
+                <h3>
         </div>
 
     <form action="index.php" method="POST">
