@@ -14,7 +14,7 @@ include("ClientCode.php");
 </head>
 
 <body>
-    <link rel="stylesheet" href="ClientStyle.css">
+    <link rel="stylesheet" href="ClientStyling.css">
 <div class = "container">
 
     <h1>Client<h1>
